@@ -28,6 +28,10 @@ Alernatively, you can include this directive into every server block using:
 Next steps are:
  - reloag nginx (nginx -s reload)
  - periodically update blacklists using '/home/<username>/nginx-rugov-block/updateBlocklist.sh --restart'
+
+You can achieve cron auto update by symlinking the update script to cron.daily:
+
+sudo ln -s /home/<username>/nginx-rugov-block/updateBlocklist.sh /etc/cron.daily/rugov_nginx_updater.sh
 ```
 
 Do all the steps carefully and you are done! 

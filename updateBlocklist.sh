@@ -2,7 +2,7 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-FMTDIR=$(dirname $(readlink -f $0))
+FMTDIR=$(dirname "$(readlink -f "$0")")
 curl --silent "https://raw.githubusercontent.com/C24Be/AS_Network_List/main/blacklists/blacklist.txt" | while read line; do echo "${line} RUGOV;"; done > "$FMTDIR/conf/rugov.map.conf"
 
 if [ -z ${1+x} ]; then
