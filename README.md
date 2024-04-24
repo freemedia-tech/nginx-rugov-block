@@ -31,7 +31,7 @@ Next steps are:
 
 You can achieve cron auto update by symlinking the update script to cron.daily:
 
-sudo ln -s /home/<username>/nginx-rugov-block/updateBlocklist.sh /etc/cron.daily/rugov_nginx_updater.sh
+sudo ln -s /home/<username>/nginx-rugov-block/updateBlocklist.sh /etc/cron.daily/rugov_nginx_updater
 ```
 
 Do all the steps carefully and you are done! 
