@@ -34,4 +34,4 @@ echo " - periodically update blacklists using '${FMT_DIR}/updateBlocklist.sh --r
 echo
 echo "You can achieve cron auto update by symlinking the update script to cron.daily:"
 echo
-echo "sudo ln -s ${FMT_DIR}/updateBlocklist.sh /etc/cron.daily/rugov_nginx_updater.sh"
+echo "sudo ln -s ${FMT_DIR}/updateBlocklist.sh /etc/cron.daily/rugov_nginx_updater"
